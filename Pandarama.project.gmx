@@ -54,6 +54,7 @@
     <object>objects\obj_base</object>
     <object>objects\obj_box_generator</object>
     <object>objects\obj_rainbox</object>
+    <object>objects\obj_granade</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_stage1</room>
