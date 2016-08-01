@@ -23,6 +23,12 @@
     <sprite>sprites\spr_circle</sprite>
     <sprites name="test">
       <sprite>sprites\spr_rainbox</sprite>
+      <sprite>sprites\spr_triangle_black</sprite>
+      <sprite>sprites\spr_triangle_trippy</sprite>
+      <sprite>sprites\spr_blitz</sprite>
+      <sprite>sprites\spr_cogwheel_black</sprite>
+      <sprite>sprites\spr_gunshot</sprite>
+      <sprite>sprites\spr_fox</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
