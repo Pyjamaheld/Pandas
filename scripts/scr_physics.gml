@@ -13,14 +13,16 @@ if (place_meeting(x, y+1, obj_black)){
 }
 
 //friction
-if (hspd != 0){
-        if (hspd < 0) {
-            hspd += fric;
-        } else {
-            hspd -= fric;
-        }
+if (!place_meeting(x - obj_panda.hspd, y, obj_panda)){
+    if (hspd != 0){
+            if (hspd < 0) {
+                hspd += fric;
+            } else {
+                hspd -= fric;
+            }
+    }
 }
-
+    
 //horizontal collision
 if (place_meeting(x+hspd, y, obj_black)){
         while (!place_meeting(x+sign(hspd), y, obj_black)){

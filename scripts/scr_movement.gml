@@ -32,7 +32,7 @@ if (place_meeting(x, y+1, obj_black)){
 }  
 
 //move right
-if (right_key){
+if (right_key and box_collision == false){
     if (hspd < spd){
         hspd += fric;
     } else {
@@ -41,13 +41,15 @@ if (right_key){
 }
 
 //move left
-if (left_key){
+if (left_key and box_collision == false){
     if (hspd > -spd){
         hspd -= fric;
         } else {
         hspd = -spd;
     }
 }
+
+//box_collision = false;
 
 //not moving
 if ((!right_key && !left_key) or (right_key && left_key)){
@@ -74,6 +76,14 @@ x += hspd;
 //vertical collision
 if (place_meeting(x, y+vspd, obj_black)){
     while (!place_meeting(x, y+sign(vspd), obj_black)){
+        y += sign(vspd);
+    }
+    vspd = 0;
+}
+
+//vertical collision rainbox
+if (place_meeting(x, y+vspd, obj_rainbox)){
+    while (!place_meeting(x, y+sign(vspd), obj_rainbox)){
         y += sign(vspd);
     }
     vspd = 0;

@@ -330,6 +330,7 @@
     <instance objName="obj_black" x="-96" y="544" name="inst_00247D41" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_black" x="-64" y="544" name="inst_A0FBE5E9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_black" x="-32" y="544" name="inst_BC9A9350" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_rainbox" x="480" y="704" name="inst_1AF005D1" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

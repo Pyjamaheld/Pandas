@@ -21,6 +21,9 @@
     <sprite>sprites\spr_airborne</sprite>
     <sprite>sprites\spr_walking</sprite>
     <sprite>sprites\spr_circle</sprite>
+    <sprites name="test">
+      <sprite>sprites\spr_rainbox</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -44,6 +47,7 @@
     <object>objects\obj_panda_parent</object>
     <object>objects\obj_base</object>
     <object>objects\obj_box_generator</object>
+    <object>objects\obj_rainbox</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_stage1</room>
