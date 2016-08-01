@@ -8,6 +8,10 @@ if (place_meeting(x, y, obj_climbing_wood) and climb_key){
     state = scr_climbing_state;
 }
 
+if (item_key){
+    scr_item_use(item);
+}
+
 scr_movement();
 
 scr_sprite_setter();

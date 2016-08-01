@@ -86,8 +86,6 @@ with (other){
     }
 }
 
-box_item = 0;
-
 if (transform){
     switch (image_index){
         case (0):
@@ -95,11 +93,12 @@ if (transform){
         case (1):
             image_index = 0;
             boxes = 0;
-            box_item = 1;
+            other.item = 1;
             break;
         default:
             image_index = 0;
             boxes = 0;
+            other.item = 1;
             break;
     }
 }

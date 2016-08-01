@@ -80,10 +80,6 @@ action2_key = false;
             <kind>1</kind>
             <string>///Execute State
 script_execute(state);
-
-if (carry = 1){
-    draw_sprite (spr_box, 0, x, y-26);
-}
 </string>
           </argument>
         </arguments>

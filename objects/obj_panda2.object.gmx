@@ -52,6 +52,9 @@ down_key = false;
 jump_key = false;
 attack_key = false;
 climb_key = false;
+item_key = false;
+action_key = false;
+action2_key = false;
 </string>
           </argument>
         </arguments>
