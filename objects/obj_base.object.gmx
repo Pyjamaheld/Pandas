@@ -81,7 +81,7 @@ image_index = boxes;
 var transform = false;
 
 with (other){
-    if (other.action2_key){
+    if (action2_key){
         transform = true;
     }
 }
