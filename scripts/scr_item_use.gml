@@ -2,8 +2,14 @@
 
 var item_nr = argument0;
 
+// Item List
+// Nr   Item
+//
+// 01   Granade
+
+// create a grenade and give it speed
 if (item_nr == 1){
-    var granade = instance_create (x, y-1, obj_granade);
+    var granade = instance_create (x, y-16, obj_granade);
     if (face == 0){
         granade.hspd = 10 + hspd * 2;
     } else if (face == 1){

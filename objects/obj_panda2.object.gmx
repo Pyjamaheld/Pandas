@@ -27,34 +27,8 @@
             <kind>1</kind>
             <string>/// Initialize variables
 
+event_inherited();
 player = 1;
-hp = 100;
-hpmax = 100;
-grav = 1;
-spd = 4;
-jspd = 16;
-hspd = 0;
-vspd = 0;
-airjump_max = 2;
-airjump = airjump_max;
-state = scr_normal_state;
-image_speed = 0.1;
-fric = 0.5;
-just_attacked = false;
-carry = 0;
-
-// no idea why, but without this code below the game will crush,
-// even though those variables are set with the input script
-right_key = false;
-left_key = false;
-up_key = false;
-down_key = false;
-jump_key = false;
-attack_key = false;
-climb_key = false;
-item_key = false;
-action_key = false;
-action2_key = false;
 </string>
           </argument>
         </arguments>

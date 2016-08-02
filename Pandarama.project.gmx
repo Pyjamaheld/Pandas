@@ -6,20 +6,21 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\spr_box</sprite>
-    <sprite>sprites\spr_granade</sprite>
-    <sprite>sprites\spr_box_generator</sprite>
-    <sprite>sprites\spr_base</sprite>
-    <sprite>sprites\spr_black</sprite>
-    <sprite>sprites\spr_climbing_wood</sprite>
-    <sprite>sprites\spr_standing</sprite>
-    <sprite>sprites\spr_attack</sprite>
-    <sprite>sprites\spr_damage</sprite>
-    <sprite>sprites\spr_panda_mask</sprite>
-    <sprite>sprites\spr_climbing</sprite>
-    <sprite>sprites\spr_airborne</sprite>
-    <sprite>sprites\spr_walking</sprite>
-    <sprite>sprites\spr_circle</sprite>
+    <sprites name="Pandas">
+      <sprite>sprites\spr_panda_mask</sprite>
+      <sprite>sprites\spr_climbing</sprite>
+      <sprite>sprites\spr_attack</sprite>
+      <sprite>sprites\spr_standing</sprite>
+      <sprite>sprites\spr_airborne</sprite>
+      <sprite>sprites\spr_damage</sprite>
+      <sprite>sprites\spr_walking</sprite>
+    </sprites>
+    <sprites name="Items">
+      <sprite>sprites\spr_granade</sprite>
+      <sprite>sprites\spr_base</sprite>
+      <sprite>sprites\spr_box</sprite>
+      <sprite>sprites\spr_box_generator</sprite>
+    </sprites>
     <sprites name="test">
       <sprite>sprites\spr_rainbox</sprite>
       <sprite>sprites\spr_triangle_black</sprite>
@@ -29,6 +30,9 @@
       <sprite>sprites\spr_gunshot</sprite>
       <sprite>sprites\spr_fox</sprite>
     </sprites>
+    <sprite>sprites\spr_black</sprite>
+    <sprite>sprites\spr_climbing_wood</sprite>
+    <sprite>sprites\spr_circle</sprite>
     <sprite>sprites\spr_frame</sprite>
   </sprites>
   <backgrounds name="background"/>
@@ -44,13 +48,13 @@
     <script>scripts\scr_item_use.gml</script>
   </scripts>
   <objects name="objects">
+    <object>objects\obj_panda_parent</object>
     <object>objects\obj_panda</object>
     <object>objects\obj_panda2</object>
     <object>objects\obj_box</object>
     <object>objects\obj_black</object>
     <object>objects\obj_climbing_wood</object>
     <object>objects\obj_damage1</object>
-    <object>objects\obj_panda_parent</object>
     <object>objects\obj_base</object>
     <object>objects\obj_box_generator</object>
     <object>objects\obj_rainbox</object>

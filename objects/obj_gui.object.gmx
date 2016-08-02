@@ -27,11 +27,20 @@
             <kind>1</kind>
             <string>/// Draw GUI
 
+// Player 1
 draw_sprite (spr_frame, 0, 768, 64);
 
 switch (obj_panda.item){
     case (1):
         draw_sprite (spr_granade, 0, 800, 80);
+}
+
+//Player 2
+draw_sprite (spr_frame, 0, 864, 64);
+
+switch (obj_panda2.item){
+    case (1):
+        draw_sprite (spr_granade, 0, 896, 80);
 }
 </string>
           </argument>

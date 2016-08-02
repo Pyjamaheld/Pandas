@@ -31,6 +31,12 @@ if (down_key){
     vspd = spd/2;
 }
 
+//jumping
+if (jump_key){
+    state = scr_normal_state;
+    vspd = -jspd;
+}
+
 //not moving
 if ((!right_key && !left_key) or (right_key && left_key)){
     hspd = 0;
