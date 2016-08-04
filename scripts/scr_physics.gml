@@ -13,13 +13,15 @@ if (place_meeting(x, y+1, obj_black)){
 }
 
 //friction
-if (!place_meeting(x - obj_panda.hspd, y, obj_panda)){
-    if (hspd != 0){
-            if (hspd < 0) {
-                hspd += fric;
-            } else {
-                hspd -= fric;
-            }
+if instance_exists (obj_panda){ //atm only working for player 1
+    if (!place_meeting(x - obj_panda.hspd, y, obj_panda)){
+        if (hspd != 0){
+                if (hspd < 0) {
+                    hspd += fric;
+                } else {
+                    hspd -= fric;
+                }
+        }
     }
 }
     

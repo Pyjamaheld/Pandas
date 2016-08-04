@@ -70,6 +70,7 @@
     <object>objects\obj_damage1</object>
     <object>objects\obj_rainbox</object>
     <object>objects\obj_gui</object>
+    <object>objects\obj_control</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_stage1</room>

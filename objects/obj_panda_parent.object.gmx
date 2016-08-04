@@ -60,6 +60,47 @@ item_key = false;
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="obj_damage1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///knockback
+
+var xdelta = x - other.x;
+var ydelta = y - other.y;
+
+if (xdelta == 0){ xdelta = 1 }
+if (ydelta == 0){ ydelta = 1 }
+
+var xknockback = (500 / xdelta);
+var yknockback = (200 / ydelta);
+
+hspd = round(xknockback * (1 + hp/100));
+vspd = round(yknockback * (1 + hp/100));
+hp += other.damage;
+
+/*if !(other.id == id){ //id not working atm
+    hspd = 20*sign(xdelta);
+    vspd = 16*sign(ydelta);
+}*/
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="4" ename="obj_boundary">
       <action>
         <libid>1</libid>
@@ -109,47 +150,6 @@ if (carry == 1 and action_key){
         boxes += 1;
     }
 }
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_damage1">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///knockback
-
-var xdelta = x - other.x;
-var ydelta = y - other.y;
-
-if (xdelta == 0){ xdelta = 1 }
-if (ydelta == 0){ ydelta = 1 }
-
-var xknockback = (500 / xdelta);
-var yknockback = (200 / ydelta);
-
-hspd = xknockback * (1 + hp/100);
-vspd = yknockback * (1 + hp/100);
-hp += other.damage;
-
-/*if !(other.id == id){ //id not working atm
-    hspd = 20*sign(xdelta);
-    vspd = 16*sign(ydelta);
-}*/
 </string>
           </argument>
         </arguments>
