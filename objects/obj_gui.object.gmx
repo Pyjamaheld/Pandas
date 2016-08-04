@@ -28,19 +28,39 @@
             <string>/// Draw GUI
 
 // Player 1
-draw_sprite (spr_frame, 0, 768, 64);
-
-switch (obj_panda.item){
-    case (1):
-        draw_sprite (spr_granade, 0, 800, 80);
+if (instance_exists(obj_panda)){
+    
+    draw_sprite (spr_frame, 0, 768, 64);
+    
+    // Draw Item
+    switch (obj_panda.item){
+        case (1):
+            draw_sprite (spr_granade, 0, 800, 80);
+            break;
+        case (2):
+            draw_sprite (spr_sword, 0, 800, 80);
+            break;
+    }
+    // Draw HP
+    draw_text (768, 48, "" + string(obj_panda.hp) + "%");
 }
 
-//Player 2
-draw_sprite (spr_frame, 0, 864, 64);
-
-switch (obj_panda2.item){
-    case (1):
-        draw_sprite (spr_granade, 0, 896, 80);
+// Player 2
+if (instance_exists(obj_panda2)){
+   
+    draw_sprite (spr_frame, 0, 864, 64);
+    
+    switch (obj_panda2.item){
+        case (1):
+            draw_sprite (spr_granade, 0, 896, 80);
+            break;
+        case (2):
+            draw_sprite (spr_sword, 0, 896, 80);
+            break;
+    }
+    
+    // Draw HP
+    draw_text (864, 48, "" + string(obj_panda2.hp) + "%");
 }
 </string>
           </argument>

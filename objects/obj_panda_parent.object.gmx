@@ -28,8 +28,7 @@
             <string>/// Initialize variables
 
 //player = 0;
-hp = 100;
-hpmax = 100;
+hp = 0;
 face = 0; //0 = right, 1 = left
 grav = 1;
 spd = 4;
@@ -56,6 +55,30 @@ climb_key = false;
 action_key = false;
 action2_key = false;
 item_key = false;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_boundary">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Die
+instance_destroy();
 </string>
           </argument>
         </arguments>
@@ -119,8 +142,9 @@ if (ydelta == 0){ ydelta = 1 }
 var xknockback = (500 / xdelta);
 var yknockback = (200 / ydelta);
 
-hspd = xknockback;
-vspd = yknockback;
+hspd = xknockback * (1 + hp/100);
+vspd = yknockback * (1 + hp/100);
+hp += other.damage;
 
 /*if !(other.id == id){ //id not working atm
     hspd = 20*sign(xdelta);

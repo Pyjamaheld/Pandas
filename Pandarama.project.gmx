@@ -20,6 +20,8 @@
       <sprite>sprites\spr_base</sprite>
       <sprite>sprites\spr_box</sprite>
       <sprite>sprites\spr_box_generator</sprite>
+      <sprite>sprites\spr_sword</sprite>
+      <sprite>sprites\spr_sword_slash</sprite>
     </sprites>
     <sprites name="test">
       <sprite>sprites\spr_rainbox</sprite>
@@ -48,17 +50,25 @@
     <script>scripts\scr_item_use.gml</script>
   </scripts>
   <objects name="objects">
-    <object>objects\obj_panda_parent</object>
-    <object>objects\obj_panda</object>
-    <object>objects\obj_panda2</object>
-    <object>objects\obj_box</object>
-    <object>objects\obj_black</object>
-    <object>objects\obj_climbing_wood</object>
+    <objects name="Pandas">
+      <object>objects\obj_panda_parent</object>
+      <object>objects\obj_panda</object>
+      <object>objects\obj_panda2</object>
+    </objects>
+    <objects name="Items">
+      <object>objects\obj_box</object>
+      <object>objects\obj_base</object>
+      <object>objects\obj_box_generator</object>
+      <object>objects\obj_granade</object>
+      <object>objects\obj_sword</object>
+    </objects>
+    <objects name="Floor and Walls">
+      <object>objects\obj_black</object>
+      <object>objects\obj_climbing_wood</object>
+      <object>objects\obj_boundary</object>
+    </objects>
     <object>objects\obj_damage1</object>
-    <object>objects\obj_base</object>
-    <object>objects\obj_box_generator</object>
     <object>objects\obj_rainbox</object>
-    <object>objects\obj_granade</object>
     <object>objects\obj_gui</object>
   </objects>
   <rooms name="rooms">

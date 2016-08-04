@@ -78,25 +78,19 @@ image_index = boxes;
             <kind>1</kind>
             <string>/// Transform boxes into item
 
-var transform = false;
-
-with (other){
-    if (action2_key){
-        transform = true;
-    }
-}
-
-if (transform){
+if (other.action2_key){
     switch (image_index){
         case (0):
             break;   
         case (1):
-            image_index = 0;
             boxes = 0;
             other.item = 1;
             break;
+        case (2):
+            boxes = 0;
+            other.item = 2;
+            break;
         default:
-            image_index = 0;
             boxes = 0;
             other.item = 1;
             break;
