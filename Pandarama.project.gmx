@@ -22,6 +22,7 @@
       <sprite>sprites\spr_box_generator</sprite>
       <sprite>sprites\spr_sword</sprite>
       <sprite>sprites\spr_sword_slash</sprite>
+      <sprite>sprites\apr_armor</sprite>
     </sprites>
     <sprites name="test">
       <sprite>sprites\spr_rainbox</sprite>
@@ -36,6 +37,7 @@
     <sprite>sprites\spr_climbing_wood</sprite>
     <sprite>sprites\spr_circle</sprite>
     <sprite>sprites\spr_frame</sprite>
+    <sprite>sprites\spr_menu_arrow</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -48,7 +50,11 @@
     <script>scripts\scr_attack_state.gml</script>
     <script>scripts\scr_physics.gml</script>
     <script>scripts\scr_item_use.gml</script>
+    <script>scripts\scr_menu.gml</script>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\fnt_options</font>
+  </fonts>
   <objects name="objects">
     <objects name="Pandas">
       <object>objects\obj_panda_parent</object>
@@ -71,8 +77,10 @@
     <object>objects\obj_rainbox</object>
     <object>objects\obj_gui</object>
     <object>objects\obj_control</object>
+    <object>objects\obj_menu</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_menu</room>
     <room>rooms\rm_stage1</room>
   </rooms>
   <help>

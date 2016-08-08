@@ -1,6 +1,6 @@
 ///scr_climbing_state
 
-scr_input();
+scr_input(player);
 airjump = airjump_max;
 hspd = 0;
 vspd = 0;

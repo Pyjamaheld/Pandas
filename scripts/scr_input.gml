@@ -10,7 +10,7 @@ climb_key = keyboard_check_pressed (ord("Q"));
 attack_key = keyboard_check_pressed (ord("K"));
 */
 
-
+player = argument0;
 
 if (gamepad_is_connected(player)){
 
